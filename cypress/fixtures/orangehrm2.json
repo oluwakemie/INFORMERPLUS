@@ -1,0 +1,26 @@
+[
+
+    {
+        "username":"Oluwakemi.dada@sproxil.com",
+        "password":"Abc1234$*",
+        "expected":"Dashboard"
+    }, 
+    
+    {
+        "username":"james.john@gmail.com",
+        "password":"Abc1234$*",
+        "expected":"Error"
+    },
+    {
+        "username":"syjgfbui.john@gmail.com",
+        "password":"Abc1234$*",
+        "expected":"Error"
+    },
+
+    {
+        "username":"_",
+        "password":" .",
+        "expected":"Error"
+    }
+    
+]
