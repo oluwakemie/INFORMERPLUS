@@ -1,4 +1,4 @@
-import Login from "../PageObjects/LoginPage.js"
+import Login from "../../PageObjects/LoginPage.js"
 
 describe('Login Page', () => {
     beforeEach('LoginSession', () => {
