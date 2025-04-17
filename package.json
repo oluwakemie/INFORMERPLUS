@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
-  },
+    "test": "npx cypress run",
+    "cypress:open": "cypress open",
+    "SmokeTest": "npx cypress run --spec \"cypress/e2e/Authentication.cy.js\" ",
+    "chromeTest": "npx run test --browser chrome",
+    "InformerTest": "npx cypress run --spec \"cypress/e2e/Practice/*\""
+
+    
+
+    
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
