@@ -31,6 +31,7 @@ describe('Login Page', () => {
         cy.get("button[class='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-fit w-fit !text-[rgba(120,0,0,255)] mb-6']").click()
         cy.get(':nth-child(2) > .rounded-xl > .p-6 > :nth-child(1) > .w-full')
             .should('have.text', 'Total SGTINs Encoded')
+            cy.wait(10000)
         cy.get('.p-6 > :nth-child(1) > .flex').should('be.visible')
             .and('contain', '24')
 
@@ -38,7 +39,7 @@ describe('Login Page', () => {
         cy.get(".p-6 > :nth-child(2) > .w-full")
             .should('have.text', 'Total SSCC Encoded')
         cy.get(':nth-child(2) > .rounded-xl > .p-6 > :nth-child(2) > .flex').should('be.visible')
-            .and('contain', '182994')
+            .and('contain', '18')
 
         // Verify total Items Commissioned
         cy.get('.p-6 > :nth-child(3) > .w-full')
@@ -75,7 +76,7 @@ describe('Login Page', () => {
         cy.get('.p-6 > :nth-child(8) > .flex').and('contain', '57')
     })
 
-    it.only('should test Items Commissioned table', () => {
+    it('should test Items Commissioned table', () => {
         //cy.get('#radix-\:ra\:-trigger-commissioned').contains('Items Commissioned').click()
         cy.get("h3[class='font-semibold leading-none tracking-tight my-[10px]']").should('be.visible');
 

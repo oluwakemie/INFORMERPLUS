@@ -15,6 +15,7 @@ module.exports = defineConfig({
   screenshotsFolder: "cypress/screenshots", // ✅ Ensure screenshots are stored
   video: true,
   e2e: {
+     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     defaultCommandTimeout: 10000,
     chromeWebSecurity: false,
     viewportWidth: 1640,
@@ -24,7 +25,7 @@ module.exports = defineConfig({
     videoCompression: 32, // Reduce file size (optional)
     videosFolder: "cypress/videos",
     screenshotOnRunFailure: true,
-  //save this pls
+ 
     "retries": {
       "runMode": 2,   // Retries failed tests twice in normal runs
       "openMode": 1  // Retries failed tests once in Cypress UI

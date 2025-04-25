@@ -20,8 +20,8 @@ class Login
 
             verifyLogin()
             {
-                cy.get("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > span:nth-child(2)")
-                .should('be.visible')
+                cy.get('a.peer\\/menu-button').contains('Dashboard')
+                .should('be.visible').click();
 
                 cy.get("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > section:nth-child(2) > nav:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(3)").contains("oluwakemi.dada@sproxil.com")
                // cy.get('.inline-flex').click()

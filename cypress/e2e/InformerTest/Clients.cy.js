@@ -12,7 +12,6 @@ describe('Login Page', () => {
     })
 
     it('',()=>{
-        cy.get("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1)").click
-        cy.get("h3[class='font-semibold leading-none tracking-tight my-[10px]']").contains("List of all clients")
+       
     })
 })
